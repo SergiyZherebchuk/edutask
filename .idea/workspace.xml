@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84a64c96-69f5-4e41-a95d-c766f6bf0156" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.install" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.module" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.views.inc" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/languages/uk_T-seeocTB0lcrOrEm0fhkmJC8RMmCEli0n-Bt9ElVJY.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_testhandler.info" afterPath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_testhandler.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_testhandler.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_testhandler.module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testtoken/drudesk_testtoken.info" afterPath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testtoken/drudesk_testtoken.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.install" afterPath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.install" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.module" />
     </list>
     <ignored path="edutask.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,21 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drudesk_table.install" pinned="false" current-in-tab="true">
+      <file leaf-file-name="drudesk_table.install" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.install">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="418">
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drudesk_table.module" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.module">
+      <file leaf-file-name="drudesk_table.views.inc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.views.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            <state relative-caret-position="209">
+              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -75,9 +73,10 @@
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testtoken/drudesk_testtoken.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_testhandler.info" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testtoken/drudesk_testtoken.info" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.info" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.install" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.views.inc" />
       </list>
     </option>
   </component>
@@ -379,15 +378,15 @@
       <option name="presentableId" value="Default" />
       <updated>1479726352936</updated>
       <workItem from="1479726356947" duration="6640000" />
-      <workItem from="1479742314806" duration="3307000" />
+      <workItem from="1479742314806" duration="4427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9947000" />
+    <option name="totallyTimeSpent" value="11067000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="272" y="191" width="1390" height="942" extended-state="1" />
+    <frame x="272" y="191" width="1390" height="942" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -569,14 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.info">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -585,10 +576,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#7#44#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.install">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="418">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.views.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
           <folding />
         </state>
       </provider>

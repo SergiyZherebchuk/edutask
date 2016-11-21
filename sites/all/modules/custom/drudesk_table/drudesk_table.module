@@ -1,8 +1,12 @@
 <?php
 
-function drudesk_table_menu()
-{
-  $items = array();
+/*
+ * Implements hook_views_api()
+ */
 
-  return $items;
+function drudesk_table_views_api()
+{
+  return array(
+    "api" =>  3
+  );
 }

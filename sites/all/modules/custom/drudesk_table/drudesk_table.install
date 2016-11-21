@@ -17,6 +17,11 @@ function drudesk_table_schema() {
       'age'     =>  array(
         'type'  =>  'int'
       ),
+      'tag'     =>  array(
+        'type'  =>  'varchar',
+        'length'    =>  32,
+        'not null'  =>  TRUE,
+      ),
       'history' =>  array(
         'type'      =>  'text',
         'not null'  =>  TRUE
