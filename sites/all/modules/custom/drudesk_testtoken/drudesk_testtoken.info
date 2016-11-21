@@ -1,0 +1,10 @@
+name = Test Token
+description = My test token for Drupal7.
+package = Token
+version = "7.x-dev"
+core = 7.x
+php = 5.2
+
+dependencies[] = ctools
+
+;Views Handler

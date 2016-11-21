@@ -9,3 +9,4 @@ dependencies[] = ctools
 
 ;Views Handler
 files[] = views/drudesk_teshandler_handler_fieldhandl.inc
+files[] = views/drudesk_teshandler_filter_sort.inc
