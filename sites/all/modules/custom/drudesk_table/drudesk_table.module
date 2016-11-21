@@ -1,0 +1,8 @@
+<?php
+
+function drudesk_table_menu()
+{
+  $items = array();
+
+  return $items;
+}

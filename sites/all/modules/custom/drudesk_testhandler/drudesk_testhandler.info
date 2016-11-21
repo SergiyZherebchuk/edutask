@@ -1,6 +1,6 @@
 name = Test Handler
 description = My test handler for Drupal7.
-package = Handler
+package = Drudesk Custom
 version = "7.x-dev"
 core = 7.x
 php = 5.2
@@ -9,4 +9,3 @@ dependencies[] = ctools
 
 ;Views Handler
 files[] = views/drudesk_teshandler_handler_fieldhandl.inc
-files[] = views/drudesk_teshandler_filter_sort.inc
