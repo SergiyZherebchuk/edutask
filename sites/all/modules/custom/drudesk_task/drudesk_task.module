@@ -10,3 +10,74 @@ function drudesk_task_views_api()
     'api'   =>  3
   );
 }
+
+/*
+ * Implements hook_menu();
+ */
+function drudesk_task_menu()
+{
+	$items['history'] = array(
+		'title' =>  t('Add your history'),
+		'page callback' =>  'drupal_get_form',
+		'page arguments'  =>  array('history_form'),
+		'access callback' =>  TRUE
+	);
+
+	return $items;
+}
+
+function history_form($form, $form_state)
+{
+	$form = array();
+
+	$form['name'] = array(
+		'#title' =>  t('Name'),
+		'#type' =>  'textfield',
+		'#required' =>  TRUE,
+		'#maxlength'  =>  30
+	);
+
+	$form['age'] = array(
+		'#title'  =>  t('Age'),
+		'#type' =>  'textfield',
+		'#required' =>  TRUE
+	);
+
+	$form['tag'] = array(
+		'#title'  =>  t('Tag'),
+		'#type' =>  'textfield',
+		'#required' =>  TRUE
+	);
+
+	$form['history'] = array(
+		'#title'  =>  t('History'),
+		'#type' =>  'textarea',
+		'#required' =>  TRUE,
+	);
+
+	$form['submit'] = array(
+		'#value'  =>  t('Add history'),
+		'#type' =>  'submit'
+	);
+
+	return $form;
+}
+
+function history_form_submit($form, &$form_state)
+{
+	$query = db_insert('drudesk_table')
+		->fields(array(
+			'name'  =>  $form_state['values']['name'],
+			'age' =>  $form_state['values']['age'],
+			'tag' =>  $form_state['values']['tag'],
+			'history' =>  $form_state['values']['history']
+		))
+		->execute();
+
+	if($query > 0) {
+		drupal_set_message(t("Data successfully added"));
+	} else {
+		drupal_set_message(t("Data unfortunately not added."), 'error');
+	}
+
+}
