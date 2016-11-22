@@ -1,0 +1,46 @@
+<?php
+
+/*
+* Implements hook_schema();
+*/
+
+function drudesk_task_schema() {
+  $schema['drudesk_table'] = array(
+    'description'   =>  'Custom drudesk table',
+    'fields'        =>  array(
+      'dd_id'      =>  array(
+        'type'      =>  'serial',
+        'unsigned'  =>  TRUE,
+        'not null'  =>  TRUE
+      ),
+      'name'    =>  array(
+        'type'      =>  'varchar',
+        'length'    =>  32,
+        'not null'  =>  TRUE,
+      ),
+      'age'     =>  array(
+        'type'  =>  'int'
+      ),
+      'tag'     =>  array(
+        'type'  =>  'varchar',
+        'length'    =>  32,
+        'not null'  =>  TRUE,
+      ),
+      'history' =>  array(
+        'type'      =>  'text',
+        'not null'  =>  TRUE
+      )
+    ),
+    'primary key'   =>  array('dd_id')
+  );
+
+  return $schema;
+}
+
+/*
+* Implements hook_unistall();
+*/
+
+function drudesk_task_unistall() {
+  drupal_unistall_schema('drudesk_table');
+}
