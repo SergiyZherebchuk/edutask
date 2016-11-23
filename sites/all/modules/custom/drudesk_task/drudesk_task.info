@@ -9,4 +9,4 @@ dependencies[] = ctools
 
 ;Views Handler
 files[] = drudesk_task.views.inc
-files[] = drudesk_task.handler_history.inc
+files[] = drudesk_task_handler_history.inc

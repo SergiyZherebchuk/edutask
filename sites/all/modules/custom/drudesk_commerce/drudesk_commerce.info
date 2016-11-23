@@ -1,0 +1,19 @@
+; &Id$
+
+name = Drudesk Commerce
+description = Install custom module
+package = Drudesk Custom
+core = 7.x
+version = 7.x-dev
+
+; Contributed modules
+dependencies[] = addressfield
+dependencies[] = admin_menu
+dependencies[] = ctools
+dependencies[] = entity
+dependencies[] = rules
+dependencies[] = rules_admin
+dependencies[] = views
+dependencies[] = views_ui
+
+; Views Handler
