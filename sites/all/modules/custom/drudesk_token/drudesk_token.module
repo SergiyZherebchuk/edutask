@@ -1,0 +1,34 @@
+<?php
+
+/*
+ * Implements hook_token_info();
+ */
+
+function drudesk_token_token_info() {
+  $tokens['user']['tokens:?'] = array(
+  	'name'  =>  t('My user token'),
+	  'description' =>  t('Creates token by user')
+  );
+
+	return array(
+		'tokens'  =>  $tokens
+	);
+}
+
+function drudesk_token_tokens($type, $tokens, array $data = array()) {
+  $replacements = array();
+
+  if ($type == 'current-user' && !empty($GLOBALS['user']->uid)) {
+    $role = $GLOBALS['user']->roles;
+
+    $pattern = 'tokens:';
+
+	  foreach ($tokens as $name =>  $value) {
+		  if(strpos($name, $pattern) !== FALSE) {
+			  
+		  }
+	  }
+  }
+
+  return $replacements;
+}

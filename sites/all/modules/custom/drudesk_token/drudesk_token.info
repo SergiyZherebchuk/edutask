@@ -1,4 +1,4 @@
-name = Test Token
+name = Drudesk Token
 description = My test token for Drupal7.
 package = Drudesk Custom
 version = "7.x-dev"
