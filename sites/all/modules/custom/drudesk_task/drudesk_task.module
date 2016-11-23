@@ -26,6 +26,9 @@ function drudesk_task_menu()
 	return $items;
 }
 
+/*
+ * Implements form();
+ */
 function history_form($form, $form_state)
 {
 	$form = array();
@@ -63,6 +66,9 @@ function history_form($form, $form_state)
 	return $form;
 }
 
+/*
+ * Implements form_submit
+ */
 function history_form_submit($form, &$form_state)
 {
 	$query = db_insert('drudesk_table')

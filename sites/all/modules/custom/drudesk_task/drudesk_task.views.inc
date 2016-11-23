@@ -16,25 +16,37 @@ function drudesk_task_views_data()
     'help' => t('Table from the DDT')
   );
 
-  $data['drudesk_table']['table']['entity type'] = 'drudesk_table';
+	$data['drudesk_table']['table']['join'] = array(
+		'node'  =>  array(
+			'left_field'  =>  'dd_id',
+			'field' =>  'dd_id'
+		)
+	);
 
-  $data['drudesk_table']['dd_id'] = array(
-    'title' =>  t('Id'),
-    'help'  =>  t('Id by DDT'),
-    'field' =>  array(
-      'handler' =>  'drudesk_task_handler_history',
-      'click sortable'  =>  TRUE
-    ),
-    'filter'  =>  array(
-      'handler' =>  'views_handler_filter_numeric',
-    ),
-    'sort'  =>  array(
-      'handler' => 'views_handler_sort',
-    ),
-    'argument' => array(
-      'handler' => 'drudesk_task_handler_argument_dd_id',
-    )
-  );
+	$data['drudesk_table']['dd_id'] = array(
+		'title' => t('Id'),
+		'help' => t('Id by DDT'),
+		'field' => array(
+			'handler' => 'drudesk_task_handler_history',
+			'click sortable' => TRUE,
+		),
+		'filter' => array(
+			'handler' => 'views_handler_filter_numeric',
+		),
+		'sort' => array(
+			'handler' => 'views_handler_sort',
+		),
+		'argument' => array(
+			'handler' => 'drudesk_task_handler_argument_dd_id',
+		),
+		'relationship' => array(
+			'base' => 'node',
+			'base field' => 'nid',
+			'label' => t('Default label'),
+			'title' => t('Title by relationships'),
+			'help' => t('More information'),
+		),
+	);
 
   $data['drudesk_table']['name'] = array(
     'title' =>  t('Name'),

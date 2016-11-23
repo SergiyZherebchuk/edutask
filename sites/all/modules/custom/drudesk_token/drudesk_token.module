@@ -25,7 +25,7 @@ function drudesk_token_tokens($type, $tokens, array $data = array()) {
 
 	  foreach ($tokens as $name =>  $value) {
 		  if(strpos($name, $pattern) !== FALSE) {
-			  
+
 		  }
 	  }
   }
