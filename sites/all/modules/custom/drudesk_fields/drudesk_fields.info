@@ -1,0 +1,12 @@
+; &Id$
+
+name = Drudesk Fields
+description = My multistep form for Drupal7.
+package = Drudesk Custom
+version = "7.x-dev"
+core = 7.x
+php = 5.2
+
+dependencies[] = ctools
+
+;Views Handler
