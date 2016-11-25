@@ -659,6 +659,7 @@ function _webform_conditional_get_all_components($nid, $submitted_data = array()
     }
     $components[$component['cid']] = $component;
     $components[$component['cid']] = $component;
+
     if (isset($submitted_data[$component['cid']])) {
       $components[$component['cid']]['value'] = $submitted_data[$component['cid']][ 0 /* 'value' */ ];
     }
