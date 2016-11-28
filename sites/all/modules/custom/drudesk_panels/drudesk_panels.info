@@ -1,5 +1,6 @@
-name = 'Drudesk Theme'
-description = Uses the Bootstrap Framework Less source files and must be compiled (not for beginners).
+name = 'Drudesk Panels'
+description = My Drudesk panels
+package = Drudesk Custom
 core = 7.x
 base theme = bootstrap
 
