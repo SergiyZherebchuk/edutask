@@ -6,7 +6,6 @@
 function drudesk_fields_menu()
 {
 	$items['drudesk_fields/form'] = array(
-		'type' => MENU_CALLBACK,
 		'title' =>  t('Multistep form'),
 		'access arguments'  =>  array('access content'),
 		'page callback' =>  'drupal_get_form',
