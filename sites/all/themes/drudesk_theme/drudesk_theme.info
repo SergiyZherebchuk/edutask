@@ -3,7 +3,6 @@ description = Uses the Bootstrap Framework Less source files and must be compile
 core = 7.x
 base theme = bootstrap
 
-
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
@@ -46,3 +45,7 @@ scripts[] = 'bootstrap/js/transition.js'
 
 ; Disable the CDN provider so compiled source files can be used.
 settings[bootstrap_cdn] = ''
+
+
+; Panel Layouts
+plugins[panels][layouts] = layouts
