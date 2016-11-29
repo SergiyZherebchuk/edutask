@@ -157,10 +157,7 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
 
-
-      <div class="preview-content">
-        <?php print render($page['content']); ?>
-      </div>
+      <?php print render($page['content']); ?>
 
     </div>
 

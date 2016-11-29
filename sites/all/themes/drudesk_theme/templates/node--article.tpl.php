@@ -80,7 +80,7 @@
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="panel panel-success" <?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="panel panel-warning" <?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
 
@@ -92,11 +92,17 @@
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
-  <?php if(!empty($content['body'])): ?>
-    <div class="panel-body" <?php print $content_attributes; ?>>
+
+  <div class="panel-body" <?php print $content_attributes; ?>>
+
+    <div class="col-md-3">
+      <?php print render($content['field_image']); ?>
+    </div>
+
+    <div class="col-md-8">
       <?php print render($content['body']); ?>
     </div>
-  <?php endif; ?>
+  </div>
 
 
   <?php if ($display_submitted): ?>
