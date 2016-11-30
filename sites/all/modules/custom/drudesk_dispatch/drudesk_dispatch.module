@@ -19,13 +19,6 @@ function drudesk_dispatch_menu()
 		'page callback' =>  'my_popup_page',
 	);
 
-	$items['dispatch'] = array(
-		'title' =>  t('Dispatch'),
-		'access arguments'  =>  array('access content'),
-		'page callback' =>  'drupal_get_form',
-		'page arguments' =>  array('drudesk_dispatch_form'),
-	);
-
 	return $items;
 }
 
@@ -35,10 +28,10 @@ function drudesk_dispatch_menu()
 function drudesk_dispatch_form($form, &$form_state) {
 	$form = array();
 
-	$form['email'] = array(
-		'#title'  =>  t('Email'),
+	$form['message'] = array(
+		'#title'  =>  t('Message'),
 		'#type' =>  'fieldset',
-		'#value'  => !empty($form_state['input']['email']) ? $form_state['input']['email'] : '',
+		'#value'  => !empty($form_state['input']['message']) ? $form_state['input']['message'] : '',
 		'#required' =>  TRUE,
 	);
 
@@ -52,6 +45,9 @@ function drudesk_dispatch_form($form, &$form_state) {
 	return $form;
 }
 
+function get_dispatch() {
+	return drupal_get_form('drudesk_dispatch_form');
+}
 
 /*
  * Implement page for popup
@@ -150,6 +146,7 @@ function my_ctools_popup_style() {
 
 
 function my_popup_callback($js = NULL) {
+
 	if(!$js) {
 		return drupal_get_form('popup_form');
 	}
@@ -172,16 +169,23 @@ function my_popup_callback($js = NULL) {
  * Implements popup form submit()
  */
 function popup_form_submit($form, &$form_state) {
-	drupal_mail('drudesk_dispatch', 'drudesk_dispatch_mail_example', $form_state['values']['email'], language_default(), array(
-		'context' =>  array(
-			'subject' =>  'First message',
-			'message' =>  'Hello, my friend!'
-		)
-	));
+	$email = $form_state['values']['email'];
+	$body[] = 'Hello. Your email is ' . $email;
 
-	exit;
+	$params = array(
+		'body'  =>  $body,
+		'subject' =>  'First message',
+	);
 
-	//drupal_goto('dispatch', array('form_state' => $form_state));
+	if(drupal_mail('drudesk_dispatch', 'mail_key', $email, language_default(), $params, FALSE))
+	{
+		$message = 'Wait the message on your email ' . $email;
+
+		drupal_set_message($message);
+		get_dispatch();
+	} else {
+		drupal_set_message('Sorry, but your email is not correct or message is not send.');
+	}
 
 }
 
@@ -189,13 +193,23 @@ function popup_form_submit($form, &$form_state) {
  * Implements hook_mail();
  */
 function drudesk_dispatch_mail($key, &$message, $params) {
-	$message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed';
+	$headers = array(
+		'MIME-Version'  =>  '1.0',
+		'Content-Type'  =>  'text/html; charset=UTF-8;',
+		'Content-Transfer-Encoding' =>  '8Bit',
+		'X-Mailer'  =>  'Drupal'
+	);
+
+	foreach ($headers as $key =>  $value) {
+		$message['header'][$key] = $value;
+	}
 
 	$message['subject'] = $params['subject'];
-	$message['body'][] = $params['body'];
+	$message['body'] = $params['body'];
 
-	switch($key) {
-		case "drudesk_dispatch_mail_example":
+	switch ($key)
+	{
+		case "mail_key":
 			break;
 	}
 }
