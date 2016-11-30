@@ -1,0 +1,201 @@
+<?php
+
+/*
+ * Implements hook_menu();
+ */
+function drudesk_dispatch_menu()
+{
+	$items['dispatch-popup/%ctools_js'] = array(
+		'title' =>  t('Drudesk dispatch popup'),
+		'page arguments'  =>  array(1),
+		'access callback' =>  TRUE,
+		'page callback' =>  'my_popup_callback',
+		'type'  =>  MENU_CALLBACK
+	);
+
+	$items['dispatch-popup'] = array(
+		'title' =>  t('Drudesk dispatch'),
+		'access callback' =>  TRUE,
+		'page callback' =>  'my_popup_page',
+	);
+
+	$items['dispatch'] = array(
+		'title' =>  t('Dispatch'),
+		'access arguments'  =>  array('access content'),
+		'page callback' =>  'drupal_get_form',
+		'page arguments' =>  array('drudesk_dispatch_form'),
+	);
+
+	return $items;
+}
+
+/*
+ * Implements form()
+ */
+function drudesk_dispatch_form($form, &$form_state) {
+	$form = array();
+
+	$form['email'] = array(
+		'#title'  =>  t('Email'),
+		'#type' =>  'fieldset',
+		'#value'  => !empty($form_state['input']['email']) ? $form_state['input']['email'] : '',
+		'#required' =>  TRUE,
+	);
+
+	/*
+	$form['submit'] = array(
+		'#type' =>  'submit',
+		'#value'  =>  t('Send email')
+	);
+	*/
+
+	return $form;
+}
+
+
+/*
+ * Implement page for popup
+ */
+function my_popup_page() {
+	my_ctools_popup_style();
+
+	return l(t('Settings'), 'dispatch-popup/nojs', array('attributes'=>array('class'=>array('ctools-use-modal', 'ctools-modal-dispatch-popup-style'))));
+}
+
+/*
+ * Implements popup form();
+ */
+function popup_form($form, $form_state) {
+	$form = array();
+
+	$form['fullname'] = array(
+		'#title'  =>  t('Full name'),
+		'#type' =>  'textfield',
+		'#required' =>  TRUE,
+	);
+
+	$form['phone'] = array(
+		'#title' =>  t('Phone'),
+		'#type' =>  'textfield',
+		'#required' =>  TRUE,
+	);
+
+	$form['email'] = array(
+		'#title' =>  t('Email'),
+		'#type' =>  'textfield',
+		'#required' =>  TRUE,
+	);
+
+	$form['submit'] = array(
+		'#type' =>  'submit',
+		'#value'  =>  t('Save data'),
+		'#ajax' =>  array(
+			'callback'  =>  'popup_form_submit'
+		),
+	);
+
+	return $form;
+}
+
+/*
+ * Implement form validation
+ */
+function popup_form_validate($form, &$form_state) {
+	$valid_email = $form_state['values']['email'];
+	$valid_phone = $form_state['values']['phone'];
+
+	if(!preg_match('/^(?:0)[1-79](?:[\.\-\s]?\d\d){4}$/', $valid_phone)) {
+		form_set_error('phone', 'Sorry, your phone ' . $valid_phone . ' is not valid.');
+	}
+
+	if(!valid_email_address($valid_email)) {
+		form_set_error('email', 'Sorry, your email address ' . $valid_email . ' is not valid.');
+	}
+}
+
+/*
+ * Popup styles
+ */
+function my_ctools_popup_style() {
+	static $added = FALSE;
+
+	if($added == FALSE) {
+		$added = TRUE;
+
+		ctools_include('modal');
+		ctools_include('ajax');
+		ctools_modal_add_js();
+
+		$popup_style = array(
+			'my-popup-style' => array(
+				'modalSize' =>  array(
+					'type'  =>  'fixed',
+					'width' =>  '300px',
+					'height'  =>  'auto',
+				),
+				'modalOptions'  =>  array(
+					'opacity' =>  (float) 0.5,
+					'background-color'  =>  'white'
+				),
+				'closeText' =>  t('Close'),
+				'loadingText' =>  t('Please, wait'),
+				'animationSpeed'  =>  'fast',
+			),
+		);
+
+		drupal_add_js($popup_style, 'setting');
+		//ctools_add_js('my_popup_style', 'my_popup');
+	}
+}
+
+
+function my_popup_callback($js = NULL) {
+	if(!$js) {
+		return drupal_get_form('popup_form');
+	}
+
+	ctools_include('modal');
+	ctools_include('ajax');
+
+	$form_state = array(
+		'ajax'  =>  TRUE,
+		'title' =>  t('Your data')
+	);
+
+	$output = ctools_modal_form_wrapper('popup_form', $form_state);
+
+	print ajax_render($output);
+	drupal_exit();
+}
+
+/*
+ * Implements popup form submit()
+ */
+function popup_form_submit($form, &$form_state) {
+	drupal_mail('drudesk_dispatch', 'drudesk_dispatch_mail_example', $form_state['values']['email'], language_default(), array(
+		'context' =>  array(
+			'subject' =>  'First message',
+			'message' =>  'Hello, my friend!'
+		)
+	));
+
+	exit;
+
+	//drupal_goto('dispatch', array('form_state' => $form_state));
+
+}
+
+/*
+ * Implements hook_mail();
+ */
+function drudesk_dispatch_mail($key, &$message, $params) {
+	$message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed';
+
+	$message['subject'] = $params['subject'];
+	$message['body'][] = $params['body'];
+
+	switch($key) {
+		case "drudesk_dispatch_mail_example":
+			break;
+	}
+}
