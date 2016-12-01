@@ -14,39 +14,63 @@ function drudesk_dispatch_menu()
 	);
 
 	$items['dispatch-popup'] = array(
-		'title' =>  t('Drudesk dispatch'),
-		'access callback' =>  TRUE,
-		'page callback' =>  'my_popup_page',
+		'title' =>  t('Message'),
+		'access callback'  =>  TRUE,
+		'page callback' =>  'drudesk_dispatch_page'
 	);
 
 	return $items;
 }
 
 /*
+ * Implement page
+ */
+function drudesk_dispatch_page() {
+	$form = drupal_get_form('drudesk_dispatch_form');
+
+	return drupal_render($form);
+}
+
+/*
  * Implements form()
  */
 function drudesk_dispatch_form($form, &$form_state) {
-	$form = array();
+	my_ctools_popup_style();
+
+	$message = variable_get('message');
+
+	$form['settings'] = array(
+		'#title'  =>  t('Settings'),
+		'#type' =>  'fieldset',
+		'#value'  => l(t('Settings'), 'dispatch-popup/nojs', array(
+			'attributes'  =>  array(
+				'class' =>  array(
+					'ctools-use-modal', 'ctools-modal-dispatch-popup-style'
+				)
+			)
+		)),
+	);
 
 	$form['message'] = array(
 		'#title'  =>  t('Message'),
 		'#type' =>  'fieldset',
-		'#value'  => !empty($form_state['input']['message']) ? $form_state['input']['message'] : '',
+		'#value'  => !empty($message) ? $message : '',
 		'#required' =>  TRUE,
 	);
 
-	/*
-	$form['submit'] = array(
-		'#type' =>  'submit',
-		'#value'  =>  t('Send email')
-	);
-	*/
+	variable_del('message');
 
 	return $form;
 }
 
-function get_dispatch() {
-	return drupal_get_form('drudesk_dispatch_form');
+
+/*
+ * Implement's message callback
+ */
+function message_callback() {
+	$form['message']['#value'] = variable_set('message');
+
+	return $form;
 }
 
 /*
@@ -56,6 +80,26 @@ function my_popup_page() {
 	my_ctools_popup_style();
 
 	return l(t('Settings'), 'dispatch-popup/nojs', array('attributes'=>array('class'=>array('ctools-use-modal', 'ctools-modal-dispatch-popup-style'))));
+}
+
+
+function my_popup_callback($js = NULL) {
+
+	if(!$js) {
+		return drupal_get_form('popup_form');
+	}
+
+	ctools_include('modal');
+	ctools_include('ajax');
+
+	$form_state = array(
+		'ajax'  =>  TRUE,
+	);
+
+	$output = ctools_modal_form_wrapper('popup_form', $form_state);
+
+	print ajax_render($output);
+	drupal_exit();
 }
 
 /*
@@ -85,9 +129,6 @@ function popup_form($form, $form_state) {
 	$form['submit'] = array(
 		'#type' =>  'submit',
 		'#value'  =>  t('Save data'),
-		'#ajax' =>  array(
-			'callback'  =>  'popup_form_submit'
-		),
 	);
 
 	return $form;
@@ -144,27 +185,6 @@ function my_ctools_popup_style() {
 	}
 }
 
-
-function my_popup_callback($js = NULL) {
-
-	if(!$js) {
-		return drupal_get_form('popup_form');
-	}
-
-	ctools_include('modal');
-	ctools_include('ajax');
-
-	$form_state = array(
-		'ajax'  =>  TRUE,
-		'title' =>  t('Your data')
-	);
-
-	$output = ctools_modal_form_wrapper('popup_form', $form_state);
-
-	print ajax_render($output);
-	drupal_exit();
-}
-
 /*
  * Implements popup form submit()
  */
@@ -182,11 +202,19 @@ function popup_form_submit($form, &$form_state) {
 		$message = 'Wait the message on your email ' . $email;
 
 		drupal_set_message($message);
-		get_dispatch();
 	} else {
 		drupal_set_message('Sorry, but your email is not correct or message is not send.');
 	}
 
+	variable_set('message', $body[0]);
+
+
+	$commands[] = ctools_ajax_command_reload();
+	//$commands[] = ctools_modal_command_dismiss();
+
+	print ajax_render($commands);
+
+	exit();
 }
 
 /*

@@ -18,40 +18,43 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DrupalConfiguration" enabled="true" version="7">
+    <drupalPath>$PROJECT_DIR$</drupalPath>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="edutask" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="drudesk_dispatch.info" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.info">
+      <file leaf-file-name="drudesk_dispatch.module" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-997">
+              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+              <folding>
+                <element signature="e#7#40#0#PHP" expanded="false" />
+                <element signature="e#614#641#0#PHP" expanded="false" />
+                <element signature="e#1392#1426#0#PHP" expanded="false" />
+                <element signature="n#my_popup_page#0;n#!!top" expanded="false" />
+                <element signature="e#1946#1980#0#PHP" expanded="false" />
+                <element signature="n#popup_form#0;n#!!top" expanded="false" />
+                <element signature="e#2479#2514#0#PHP" expanded="false" />
+                <element signature="n#popup_form_validate#0;n#!!top" expanded="false" />
+                <element signature="e#2962#2984#0#PHP" expanded="false" />
+                <element signature="n#my_ctools_popup_style#0;n#!!top" expanded="false" />
+                <element signature="e#3655#3695#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drudesk_dispatch.module" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module">
+      <file leaf-file-name="drudesk_fields.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-705">
-              <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
-              <folding>
-                <element signature="e#7#40#0#PHP" expanded="false" />
-                <element signature="e#470#497#0#PHP" expanded="false" />
-                <element signature="e#970#1004#0#PHP" expanded="false" />
-                <element signature="n#my_popup_page#0;n#!!top" expanded="false" />
-                <element signature="e#1212#1246#0#PHP" expanded="false" />
-                <element signature="n#popup_form#0;n#!!top" expanded="false" />
-                <element signature="e#1810#1845#0#PHP" expanded="false" />
-                <element signature="e#2293#2315#0#PHP" expanded="false" />
-                <element signature="n#my_ctools_popup_style#0;n#!!top" expanded="false" />
-                <element signature="n#my_popup_callback#0;n#!!top" expanded="false" />
-                <element signature="e#3327#3367#0#PHP" expanded="false" />
-              </folding>
+            <state relative-caret-position="-3581">
+              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,10 +142,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.6" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="583" />
-    <option name="y" value="114" />
-    <option name="width" value="1370" />
-    <option name="height" value="1089" />
+    <option name="x" value="49" />
+    <option name="y" value="24" />
+    <option name="width" value="1871" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -169,11 +172,138 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drudesk_dispatch" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,27 +409,28 @@
       <workItem from="1480316267079" duration="25213000" />
       <workItem from="1480404183272" duration="19224000" />
       <workItem from="1480488299972" duration="26398000" />
-      <workItem from="1480518293110" duration="1520000" />
+      <workItem from="1480518293110" duration="3448000" />
+      <workItem from="1480576017748" duration="18107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142247000" />
+    <option name="totallyTimeSpent" value="162282000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="583" y="114" width="1370" height="1089" extended-state="0" />
+    <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35649547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19780822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4749478" sideWeight="0.5019178" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48940465" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4749478" sideWeight="0.4980822" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -380,51 +511,70 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
-          <line>15</line>
-          <option name="timeStamp" value="148" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
           <line>7</line>
           <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
-          <line>44</line>
-          <option name="timeStamp" value="177" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
-          <line>209</line>
+          <line>237</line>
           <option name="timeStamp" value="214" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
-          <line>212</line>
+          <line>240</line>
           <option name="timeStamp" value="215" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
-          <line>185</line>
-          <option name="timeStamp" value="229" />
+          <line>214</line>
+          <option name="timeStamp" value="253" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
-          <line>184</line>
-          <option name="timeStamp" value="231" />
+          <line>208</line>
+          <option name="timeStamp" value="267" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
-          <line>179</line>
-          <option name="timeStamp" value="232" />
+          <line>216</line>
+          <option name="timeStamp" value="270" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
+          <line>70</line>
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
+          <line>72</line>
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
+          <line>217</line>
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
+          <line>62</line>
+          <option name="timeStamp" value="278" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
+          <line>199</line>
+          <option name="timeStamp" value="280" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module</url>
+          <line>203</line>
+          <option name="timeStamp" value="281" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="233" />
+      <option name="time" value="282" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/drudesk_theme.info" />
     <entry file="file://$PROJECT_DIR$/sites/all/themes/bootstrap/starterkits/sass/sass.starterkit">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -727,29 +877,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/system/system.mail.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="-3581">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-705">
-          <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+        <state relative-caret-position="-997">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding>
             <element signature="e#7#40#0#PHP" expanded="false" />
-            <element signature="e#470#497#0#PHP" expanded="false" />
-            <element signature="e#970#1004#0#PHP" expanded="false" />
+            <element signature="e#614#641#0#PHP" expanded="false" />
+            <element signature="e#1392#1426#0#PHP" expanded="false" />
             <element signature="n#my_popup_page#0;n#!!top" expanded="false" />
-            <element signature="e#1212#1246#0#PHP" expanded="false" />
+            <element signature="e#1946#1980#0#PHP" expanded="false" />
             <element signature="n#popup_form#0;n#!!top" expanded="false" />
-            <element signature="e#1810#1845#0#PHP" expanded="false" />
-            <element signature="e#2293#2315#0#PHP" expanded="false" />
+            <element signature="e#2479#2514#0#PHP" expanded="false" />
+            <element signature="n#popup_form_validate#0;n#!!top" expanded="false" />
+            <element signature="e#2962#2984#0#PHP" expanded="false" />
             <element signature="n#my_ctools_popup_style#0;n#!!top" expanded="false" />
-            <element signature="n#my_popup_callback#0;n#!!top" expanded="false" />
-            <element signature="e#3327#3367#0#PHP" expanded="false" />
+            <element signature="e#3655#3695#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
