@@ -1,28 +1,29 @@
 <?php
 
-/*
+/**
  * Implements hook_menu();
  */
 function drudesk_dispatch_menu()
 {
 	$items['dispatch-popup/%ctools_js'] = array(
 		'title' =>  t('Drudesk dispatch popup'),
-		'page arguments'  =>  array(1),
-		'access callback' =>  TRUE,
+    'page arguments'  =>  array(1),
 		'page callback' =>  'my_popup_callback',
+    'access callback' =>  array(TRUE),
+    'access arguments' => array('access content'),
 		'type'  =>  MENU_CALLBACK
 	);
 
 	$items['dispatch-popup'] = array(
 		'title' =>  t('Message'),
-		'access callback'  =>  TRUE,
+    'access callback' =>  array(TRUE),
 		'page callback' =>  'drudesk_dispatch_page'
 	);
 
 	return $items;
 }
 
-/*
+/**
  * Implement page
  */
 function drudesk_dispatch_page() {
@@ -31,7 +32,7 @@ function drudesk_dispatch_page() {
 	return drupal_render($form);
 }
 
-/*
+/**
  * Implements form()
  */
 function drudesk_dispatch_form($form, &$form_state) {
@@ -64,7 +65,7 @@ function drudesk_dispatch_form($form, &$form_state) {
 }
 
 
-/*
+/**
  * Implement's message callback
  */
 function message_callback() {
@@ -73,7 +74,7 @@ function message_callback() {
 	return $form;
 }
 
-/*
+/**
  * Implement page for popup
  */
 function my_popup_page() {
@@ -102,7 +103,7 @@ function my_popup_callback($js = NULL) {
 	drupal_exit();
 }
 
-/*
+/**
  * Implements popup form();
  */
 function popup_form($form, $form_state) {
@@ -134,7 +135,7 @@ function popup_form($form, $form_state) {
 	return $form;
 }
 
-/*
+/**
  * Implement form validation
  */
 function popup_form_validate($form, &$form_state) {
@@ -150,7 +151,7 @@ function popup_form_validate($form, &$form_state) {
 	}
 }
 
-/*
+/**
  * Popup styles
  */
 function my_ctools_popup_style() {
@@ -200,7 +201,6 @@ function popup_form_submit($form, &$form_state) {
 	if(drupal_mail('drudesk_dispatch', 'mail_key', $email, language_default(), $params, FALSE))
 	{
 		$message = 'Wait the message on your email ' . $email;
-
 		drupal_set_message($message);
 	} else {
 		drupal_set_message('Sorry, but your email is not correct or message is not send.');
@@ -208,16 +208,13 @@ function popup_form_submit($form, &$form_state) {
 
 	variable_set('message', $body[0]);
 
-
 	$commands[] = ctools_ajax_command_reload();
-	//$commands[] = ctools_modal_command_dismiss();
 
 	print ajax_render($commands);
-
 	exit();
 }
 
-/*
+/**
  * Implements hook_mail();
  */
 function drudesk_dispatch_mail($key, &$message, $params) {

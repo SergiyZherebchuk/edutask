@@ -5,14 +5,11 @@ $plugin = array(
 	'single'  =>  TRUE,
 	'category'  =>  t('Custom Panes'),
 	'render callback' =>  'drudesk_panels_custom_pane_render',
-	//'admin info'  =>  'drudesk_panels_custom_pane_info',
-	//'defaults'  =>  array()
 );
 
-/*
+/**
  * Render the pane
  */
-
 function drudesk_panels_custom_pane_render($subtype, $conf, $panel_args, $contexts) {
 	$items = array();
 
