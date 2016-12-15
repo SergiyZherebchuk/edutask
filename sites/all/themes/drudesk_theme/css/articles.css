@@ -1,0 +1,35 @@
+.blog-block {
+  height: auto;
+  min-height: 300px;
+  margin-bottom: 50px;
+  background-color: white;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+.blog-block .block-image {
+  float: left;
+}
+
+.blog-block .block-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin: auto;
+}
+
+.blog-block .block-title {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 40px;
+  color: #434343;
+}
+
+.blog-block .block-post {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  color: #868686;
+  overflow: hidden;
+}
