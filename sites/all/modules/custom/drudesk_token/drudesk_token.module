@@ -19,7 +19,6 @@ function drudesk_token_tokens($type, $tokens, array $data = array()) {
   $replacements = array();
 
   if ($type == 'current-user' && !empty($GLOBALS['user']->uid)) {
-    $role = $GLOBALS['user']->roles;
 
     $pattern = 'tokens:';
 

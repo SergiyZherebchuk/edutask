@@ -1,0 +1,8 @@
+<?php
+
+/**
+* Implements hook_unistall()
+*/
+function drudesk_dispatch_unistall() {
+  variable_del('message');
+}

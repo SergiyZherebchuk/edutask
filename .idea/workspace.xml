@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84a64c96-69f5-4e41-a95d-c766f6bf0156" name="Default" comment="" />
+    <list default="true" id="84a64c96-69f5-4e41-a95d-c766f6bf0156" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/css/articles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/template/node--article.tpl.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/edutest_13_12_2016.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right/drudesk-theme-my-theme-right.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right/my_theme_right.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right/my_theme_right.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right/my_theme_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/html.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/node--article.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/node--blog.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/node.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/page.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/views-view--nodes.tpl.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/bootstrap/bootstrap.info" afterPath="$PROJECT_DIR$/sites/all/themes/bootstrap/bootstrap.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/bootstrap/includes/registry.inc" afterPath="$PROJECT_DIR$/sites/all/themes/bootstrap/includes/registry.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/bootstrap/package.json" afterPath="$PROJECT_DIR$/sites/all/themes/bootstrap/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/bootstrap/starterkits/less/less/overrides.less" afterPath="$PROJECT_DIR$/sites/all/themes/bootstrap/starterkits/less/less/overrides.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/bootstrap/starterkits/sass/scss/_overrides.scss" afterPath="$PROJECT_DIR$/sites/all/themes/bootstrap/starterkits/sass/scss/_overrides.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/bootstrap/templates/system/status-messages.func.php" afterPath="$PROJECT_DIR$/sites/all/themes/bootstrap/templates/system/status-messages.func.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/css/style.css" afterPath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/drudesk_theme.info" afterPath="$PROJECT_DIR$/sites/all/themes/drudesk_theme/drudesk_theme.info" />
+    </list>
     <ignored path="edutask.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -14,6 +37,9 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DrupalConfiguration" enabled="true" version="7">
+    <drupalPath>$PROJECT_DIR$</drupalPath>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -52,6 +78,15 @@
         </entry>
       </file>
     </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,23 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_teshandler_handler_fieldhandl.inc" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_testhandler.module" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testtoken/drudesk_testtoken.module" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testtoken/drudesk_testtoken.info" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.info" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.module" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.install" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.views.inc" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_testhandler_handler_fieldhandl.inc" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_testhandler_filter_sort.inc" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_testhandler.views.inc" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_filter_sort.inc" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_field_tag.inc" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task.install" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_testhandler.install" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_testhandler.info" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_task.install" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_task_handler_history.inc" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_task.info" />
         <option value="$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/includes/views/commerce_product.views.inc" />
@@ -83,8 +101,6 @@
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_task_handler_argument_dd_id.inc" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_task.views.inc" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_token/drudesk_token.info" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_token/drudesk_token.module" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task.views.inc" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_commerce/drudesk_commerce.info" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_commerce/drudesk_commerce.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/payment/commerce_payment.module" />
@@ -92,8 +108,43 @@
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.form.inc" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.info" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/contrib/webform_conditional/webform_conditional.module" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/less.starterkit" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right.css" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right.inc" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/contrib/panels/plugins/layouts/threecol_33_34_33/panels-threecol-33-34-33.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right/my_theme_right.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_panels/drudesk_panels.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_panels/drudesk_panels.info" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_panels/plugins/content_types/custom_pane.inc" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right/my_theme_right.inc" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right/drudesk-theme-my-theme-right.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/field.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/page.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/node-nodes.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/views-view--nodes.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/node.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/node--article.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/node--blog.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.info" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/my_popup_style.js" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task.install" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_history.inc" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_token/drudesk_token.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_argument_dd_id.inc" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_panels/plugins/content_types/drudesk_panels_pane.inc" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task.views.inc" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.install" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_field_tag.inc" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.module" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right/my_theme_right.css" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/drudesk_theme.info" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/css/style.css" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/template/node.tpl.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/css/articles.css" />
+        <option value="$PROJECT_DIR$/sites/all/themes/drudesk_theme/template/node--article.tpl.php" />
       </list>
     </option>
   </component>
@@ -140,6 +191,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,26 +241,8 @@
               <option name="myItemId" value="all" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="edutask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="edutask" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -230,41 +264,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="custom" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="edutask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="edutask" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contrib" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webform_conditional" />
+              <option name="myItemId" value="drudesk_theme" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,17 +290,98 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="contrib" />
+              <option name="myItemId" value="drudesk_theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drudesk_theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_theme_right" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drudesk_theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edutask" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -305,11 +390,23 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/user/www/edutask/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.info" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch" />
+      <recent name="$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates" />
+      <recent name="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right" />
+      <recent name="$PROJECT_DIR$/sites/all/themes/drudesk_theme" />
+      <recent name="$PROJECT_DIR$/sites/all/themes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sites/all/themes/drudesk_theme/template" />
+      <recent name="$PROJECT_DIR$/sites/all/modules/custom/drudesk_panels" />
+      <recent name="$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right" />
+      <recent name="$PROJECT_DIR$/sites/all/themes" />
       <recent name="$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler" />
-      <recent name="$PROJECT_DIR$/sites/all/modules/custom/drudesk_table" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Application.edutask">
@@ -387,31 +484,46 @@
       <workItem from="1479992394795" duration="8315000" />
       <workItem from="1480003202231" duration="876000" />
       <workItem from="1481792209860" duration="1000" />
+      <workItem from="1480069594587" duration="167000" />
+      <workItem from="1480069965679" duration="11694000" />
+      <workItem from="1480316267079" duration="25213000" />
+      <workItem from="1480404183272" duration="19224000" />
+      <workItem from="1480488299972" duration="26398000" />
+      <workItem from="1480518293110" duration="3448000" />
+      <workItem from="1480576017748" duration="18952000" />
+      <workItem from="1481187943536" duration="90000" />
+      <workItem from="1481266811845" duration="10587000" />
+      <workItem from="1481612205817" duration="15549000" />
+      <workItem from="1481728250460" duration="4111000" />
+      <workItem from="1481785188929" duration="5319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="58032000" />
+    <option name="totallyTimeSpent" value="198783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2460274" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20876712" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4749478" sideWeight="0.5019178" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4749478" sideWeight="0.4980822" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46346554" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -436,428 +548,336 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_history.inc</url>
-          <line>3</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_history.inc</url>
-          <line>11</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_history.inc</url>
-          <line>22</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_history.inc</url>
-          <line>51</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_history.inc</url>
-          <line>52</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.form.inc</url>
-          <line>71</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.form.inc</url>
-          <line>8</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.form.inc</url>
-          <line>17</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.module</url>
-          <line>16</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.form.inc</url>
-          <line>5</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.form.inc</url>
-          <line>7</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.form.inc</url>
-          <line>22</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.form.inc</url>
-          <line>67</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.module</url>
-          <line>90</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.module</url>
-          <line>91</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.module</url>
-          <line>88</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.module</url>
-          <line>25</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.module</url>
-          <line>94</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/sites/all/modules/contrib/webform_conditional/webform_conditional.module</url>
           <line>662</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/sites/all/modules/contrib/webform_conditional/webform_conditional.module</url>
-          <line>661</line>
+          <line>660</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_panels/plugins/content_types/drudesk_panels_pane.inc</url>
+          <line>33</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_panels/plugins/content_types/drudesk_panels_pane.inc</url>
+          <line>30</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_panels/plugins/content_types/drudesk_panels_pane.inc</url>
+          <line>29</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="54" />
+      <option name="time" value="299" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.info" />
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_panels/drudesk_panels.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/bootstrap/templates/system/container.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/node/node.api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9690">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/node/node.pages.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12533">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/field/theme/field.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="56" column="62" selection-start-line="56" selection-start-column="62" selection-end-line="56" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/field.tpl.php" />
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_panels/drudesk_panels.module">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/commerce_product_ui.info">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/page.tpl.php" />
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/panels/panels_node/panels_node.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1368">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/commerce_product_ui.install">
+    <entry file="file://$PROJECT_DIR$/modules/node/node.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1197">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-152">
+          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/commerce_product.api.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/views-view--nodes.tpl.php" />
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/node--article.tpl.php" />
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/node--blog.tpl.php" />
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.form.inc" />
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/my_popup_style.js" />
+    <entry file="file://$PROJECT_DIR$/modules/system/system.mail.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-855">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="157">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/tests/commerce_product_crud_test.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/includes/commerce_product.controller.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/commerce_product_ui.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9745">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.views.inc" />
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_table/drudesk_table.module" />
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_testhandler.inc" />
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/includes/commerce_product_ui.forms.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_field_tag.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_testhandler/drudesk_task_filter_sort.inc" />
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/includes/views/handlers/commerce_product_handler_field_product_type.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/html.tpl.php" />
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/templates/node.tpl.php" />
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task.install">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-348">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        <state relative-caret-position="38">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/commerce_product.install">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_panels/plugins/content_types/drudesk_panels_pane.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/includes/views/handlers/commerce_product_handler_field_product.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/includes/views/handlers/commerce_product_handler_argument_product_id.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/includes/views/commerce_product.views.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/commerce.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21508">
-          <caret line="1135" column="45" selection-start-line="1135" selection-start-column="34" selection-end-line="1135" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_history.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="209">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/bootstrap.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="1719" column="9" selection-start-line="1719" selection-start-column="9" selection-end-line="1719" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_argument_dd_id.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_token/drudesk_token.module">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_field_tag.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        <state relative-caret-position="342">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_token/drudesk_token.info">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task_handler_history.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="247">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/payment/commerce_payment.api.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.install">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
+        <state relative-caret-position="114">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-846">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce_qiwi/commerce_qiwi.info" />
     <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/cart/includes/commerce_cart.checkout_pane.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/checkout/commerce_checkout.rules.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/includes/commerce.currency.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="310" column="8" selection-start-line="310" selection-start-column="5" selection-end-line="310" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/includes/commerce_ui.admin.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-295">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/cart/commerce_cart.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product/commerce_product.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="945" column="54" selection-start-line="945" selection-start-column="54" selection-end-line="945" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/price/commerce_price.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3933">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/product_pricing/commerce_product_pricing.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_commerce/drudesk_commerce.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/payment/includes/views/commerce_payment.views.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2223">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/commerce/modules/payment/commerce_payment.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_commerce/drudesk_commerce.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/webform_conditional/webform_conditional.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1899">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/webform_conditional/webform_conditional.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task.views.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state relative-caret-position="703">
+          <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_task/drudesk_task.info">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/webform/templates/webform-form.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="14" selection-start-line="2" selection-start-column="0" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/mforms/mforms_example/mforms_example.module" />
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.form.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/webform/webform.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2109">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/webform/webform.api.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/webform/webform.drush.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
+        <state relative-caret-position="-741">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/webform/components/number.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_fields/drudesk_fields.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1786">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="138">
+          <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_token/drudesk_token.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/drudesk_dispatch/drudesk_dispatch.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="144" column="72" selection-start-line="144" selection-start-column="72" selection-end-line="145" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/webform/webform.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18183">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/bootstrap/starterkits/sass/scss/_overrides.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-912">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/webform_conditional/webform_conditional.module">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/bootstrap/starterkits/sass/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="663" column="5" selection-start-line="663" selection-start-column="5" selection-end-line="663" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right/drudesk-theme-my-theme-right.tpl.php" />
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/layouts/my_theme_right/my_theme_right.css" />
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/bootstrap/starterkits/sass/sass.starterkit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/template/html.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/my_theme_right/drudesk-theme-my-theme-right.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/drudesk_theme.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/my_theme_right/my_theme_right.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/my_theme_right/my_theme_right.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/bootstrap/dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="3016" column="28" selection-start-line="3016" selection-start-column="28" selection-end-line="3016" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/template/node--article.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="100" column="48" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/css/articles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="1073" column="6" selection-start-line="1073" selection-start-column="6" selection-end-line="1073" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/drudesk_theme/template/node.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
           <folding />
         </state>
       </provider>

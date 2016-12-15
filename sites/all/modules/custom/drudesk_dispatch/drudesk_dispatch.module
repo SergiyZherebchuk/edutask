@@ -1,0 +1,240 @@
+<?php
+
+/**
+ * Implements hook_menu();
+ */
+function drudesk_dispatch_menu()
+{
+	$items['dispatch-popup/%ctools_js'] = array(
+		'title' =>  t('Drudesk dispatch popup'),
+    'page arguments'  =>  array(1),
+		'page callback' =>  'my_popup_callback',
+    'access callback' =>  array(TRUE),
+    'access arguments' => array('access content'),
+		'type'  =>  MENU_CALLBACK
+	);
+
+	$items['dispatch-popup'] = array(
+		'title' =>  t('Message'),
+    'access callback' =>  array(TRUE),
+		'page callback' =>  'drudesk_dispatch_page'
+	);
+
+	return $items;
+}
+
+/**
+ * Implement page
+ */
+function drudesk_dispatch_page() {
+	$form = drupal_get_form('drudesk_dispatch_form');
+
+	return drupal_render($form);
+}
+
+/**
+ * Implements form()
+ */
+function drudesk_dispatch_form($form, &$form_state) {
+	my_ctools_popup_style();
+
+	$message = variable_get('message');
+
+	$form['settings'] = array(
+		'#title'  =>  t('Settings'),
+		'#type' =>  'fieldset',
+		'#value'  => l(t('Settings'), 'dispatch-popup/nojs', array(
+			'attributes'  =>  array(
+				'class' =>  array(
+					'ctools-use-modal', 'ctools-modal-dispatch-popup-style'
+				)
+			)
+		)),
+	);
+
+	$form['message'] = array(
+		'#title'  =>  t('Message'),
+		'#type' =>  'fieldset',
+		'#value'  => !empty($message) ? $message : '',
+		'#required' =>  TRUE,
+	);
+
+	variable_del('message');
+
+	return $form;
+}
+
+
+/**
+ * Implement's message callback
+ */
+function message_callback() {
+	$form['message']['#value'] = variable_set('message');
+
+	return $form;
+}
+
+/**
+ * Implement page for popup
+ */
+function my_popup_page() {
+	my_ctools_popup_style();
+
+	return l(t('Settings'), 'dispatch-popup/nojs', array('attributes'=>array('class'=>array('ctools-use-modal', 'ctools-modal-dispatch-popup-style'))));
+}
+
+
+function my_popup_callback($js = NULL) {
+
+	if(!$js) {
+		return drupal_get_form('popup_form');
+	}
+
+	ctools_include('modal');
+	ctools_include('ajax');
+
+	$form_state = array(
+		'ajax'  =>  TRUE,
+	);
+
+	$output = ctools_modal_form_wrapper('popup_form', $form_state);
+
+	print ajax_render($output);
+	drupal_exit();
+}
+
+/**
+ * Implements popup form();
+ */
+function popup_form($form, $form_state) {
+	$form = array();
+
+	$form['fullname'] = array(
+		'#title'  =>  t('Full name'),
+		'#type' =>  'textfield',
+		'#required' =>  TRUE,
+	);
+
+	$form['phone'] = array(
+		'#title' =>  t('Phone'),
+		'#type' =>  'textfield',
+		'#required' =>  TRUE,
+	);
+
+	$form['email'] = array(
+		'#title' =>  t('Email'),
+		'#type' =>  'textfield',
+		'#required' =>  TRUE,
+	);
+
+	$form['submit'] = array(
+		'#type' =>  'submit',
+		'#value'  =>  t('Save data'),
+	);
+
+	return $form;
+}
+
+/**
+ * Implement form validation
+ */
+function popup_form_validate($form, &$form_state) {
+	$valid_email = $form_state['values']['email'];
+	$valid_phone = $form_state['values']['phone'];
+
+	if(!preg_match('/^(?:0)[1-79](?:[\.\-\s]?\d\d){4}$/', $valid_phone)) {
+		form_set_error('phone', 'Sorry, your phone ' . $valid_phone . ' is not valid.');
+	}
+
+	if(!valid_email_address($valid_email)) {
+		form_set_error('email', 'Sorry, your email address ' . $valid_email . ' is not valid.');
+	}
+}
+
+/**
+ * Popup styles
+ */
+function my_ctools_popup_style() {
+	static $added = FALSE;
+
+	if($added == FALSE) {
+		$added = TRUE;
+
+		ctools_include('modal');
+		ctools_include('ajax');
+		ctools_modal_add_js();
+
+		$popup_style = array(
+			'my-popup-style' => array(
+				'modalSize' =>  array(
+					'type'  =>  'fixed',
+					'width' =>  '300px',
+					'height'  =>  'auto',
+				),
+				'modalOptions'  =>  array(
+					'opacity' =>  (float) 0.5,
+					'background-color'  =>  'white'
+				),
+				'closeText' =>  t('Close'),
+				'loadingText' =>  t('Please, wait'),
+				'animationSpeed'  =>  'fast',
+			),
+		);
+
+		drupal_add_js($popup_style, 'setting');
+		//ctools_add_js('my_popup_style', 'my_popup');
+	}
+}
+
+/*
+ * Implements popup form submit()
+ */
+function popup_form_submit($form, &$form_state) {
+	$email = $form_state['values']['email'];
+	$body[] = 'Hello. Your email is ' . $email;
+
+	$params = array(
+		'body'  =>  $body,
+		'subject' =>  'First message',
+	);
+
+	if(drupal_mail('drudesk_dispatch', 'mail_key', $email, language_default(), $params, FALSE))
+	{
+		$message = 'Wait the message on your email ' . $email;
+		drupal_set_message($message);
+	} else {
+		drupal_set_message('Sorry, but your email is not correct or message is not send.');
+	}
+
+	variable_set('message', $body[0]);
+
+	$commands[] = ctools_ajax_command_reload();
+
+	print ajax_render($commands);
+	exit();
+}
+
+/**
+ * Implements hook_mail();
+ */
+function drudesk_dispatch_mail($key, &$message, $params) {
+	$headers = array(
+		'MIME-Version'  =>  '1.0',
+		'Content-Type'  =>  'text/html; charset=UTF-8;',
+		'Content-Transfer-Encoding' =>  '8Bit',
+		'X-Mailer'  =>  'Drupal'
+	);
+
+	foreach ($headers as $key =>  $value) {
+		$message['header'][$key] = $value;
+	}
+
+	$message['subject'] = $params['subject'];
+	$message['body'] = $params['body'];
+
+	switch ($key)
+	{
+		case "mail_key":
+			break;
+	}
+}

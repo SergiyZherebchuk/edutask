@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
 * Implements hook_schema();
 */
 
@@ -35,12 +35,4 @@ function drudesk_task_schema() {
   );
 
   return $schema;
-}
-
-/*
-* Implements hook_unistall();
-*/
-
-function drudesk_task_unistall() {
-  drupal_unistall_schema('drudesk_table');
 }

@@ -1,249 +1,259 @@
 <?php
 
-/*
+/**
  * Implements hook_menu();
  */
-function drudesk_fields_menu()
-{
-	$items['drudesk_fields/form'] = array(
-		'type' => MENU_CALLBACK,
-		'title' =>  t('Multistep form'),
-		'access arguments'  =>  array('access content'),
-		'page callback' =>  'drupal_get_form',
-		'page arguments' =>  array('drudesk_fields_form'),
-	);
+function drudesk_fields_menu() {
+  $items['drudesk_fields/form'] = array(
+    'title' => t('Multistep form'),
+    'access arguments' => array('access content'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('drudesk_fields_form'),
+  );
 
+  return $items;
+}
 
-	return $items;
+/**
+ * Implements hook_form().
+ */
+function drudesk_fields_form($node, &$form_state) {
+  $step = isset($form_state['step']) ? $form_state['step'] : 1;
+
+  switch ($step) {
+    case '1' :
+      {
+        $form['name'] = array(
+          '#type' => 'textfield',
+          '#title' => t('Name'),
+          '#description' => 'Enter your name',
+          '#size' => 20,
+          '#maxlength' => 32,
+        );
+
+        $form['age'] = array(
+          '#type' => 'textfield',
+          '#title' => t('Age'),
+          '#description' => 'Enter your age',
+          '#states' => array(
+            'visible' => array(
+              ':input[name="name"]' => array('empty' => FALSE),
+            ),
+          ),
+        );
+
+        if (isset($form_state['storage'])) {
+          $form['name']['#default_value'] = isset($form_state['storage']['name']) ? $form_state['storage']['name'] : "";
+          $form['age']['#default_value'] = isset($form_state['storage']['age']) ? $form_state['storage']['age'] : "";
+        }
+
+        $form['submit'] = array(
+          '#type' => 'submit',
+          '#value' => t('Next >>'),
+        );
+      }
+      break;
+    case '2' :
+      {
+        $form['tag'] = array(
+          '#type' => 'textfield',
+          '#title' => t('Tag'),
+          '#default_value' => !empty($form_state['values']['tag']) ? $form_state['values']['tag'] : '',
+        );
+
+        if (isset($form_state['storage'])) {
+          $form['tag']['#default_value'] = isset($form_state['storage']['tag']) ? $form_state['storage']['tag'] : "";
+        }
+
+        $form['back'] = array(
+          '#type' => 'submit',
+          '#value' => t('<< Back'),
+          '#submit' => array('drudesk_fields_form_submit'),
+        );
+
+        $form['next'] = array(
+          '#type' => 'submit',
+          '#value' => t('Next >>'),
+        );
+      }
+      break;
+    case '3' :
+      {
+        $form['history'] = array(
+          '#type' => 'textarea',
+          '#title' => t('History'),
+        );
+
+        if (isset($form_state['storage'])) {
+          $form['history']['#default_value'] = isset($form_state['storage']['history']) ? $form_state['storage']['history'] : "";
+        }
+
+        $form['back'] = array(
+          '#type' => 'submit',
+          '#value' => t('<< Back'),
+          '#submit' => array('drudesk_fields_form_submit'),
+        );
+
+        $form['next'] = array(
+          '#type' => 'submit',
+          '#value' => t('Next >>'),
+        );
+      }
+      break;
+    case '4' :
+      {
+        $form['name'] = array(
+          '#type' => 'fieldset',
+          '#title' => t('Name'),
+          '#value' => $form_state['storage']['name'],
+        );
+
+        $form['age'] = array(
+          '#type' => 'fieldset',
+          '#title' => t('Age'),
+          '#value' => $form_state['storage']['age'],
+        );
+
+        $form['tag'] = array(
+          '#type' => 'fieldset',
+          '#title' => t('Tag'),
+          '#value' => $form_state['storage']['tag'],
+        );
+
+        $form['history'] = array(
+          '#type' => 'fieldset',
+          '#title' => t('History'),
+          '#value' => $form_state['storage']['history'],
+        );
+
+        $form['back'] = array(
+          '#type' => 'submit',
+          '#value' => t('<< Back'),
+          '#submit' => array('drudesk_fields_form_submit'),
+        );
+
+        $form['finish'] = array(
+          '#type' => 'submit',
+          '#value' => t('Save all'),
+        );
+      }
+      break;
+  }
+
+  return $form;
 }
 
 /*
- * Implements form
- */
-function drudesk_fields_form($form, &$form_state)
-{
-	if(isset($form_state['rebuild'])) {
-		$form_state['input'] = array();
-	}
-
-	$step = isset($form_state['storage']['step']) ? $form_state['storage']['step'] : 1;
-
-	$form_state['storage']['step'] = $step;
-
-	if($step == 1) {
-		return drudesk_fields_step1_form($form, $form_state);
-	} elseif ($step == 2) {
-		return drudesk_fields_step2_form($form, $form_state);
-	} elseif ($step == 3) {
-		return drudesk_fields_step3_form($form, $form_state);
-	} else {
-		return drudesk_fields_last_form($form, $form_state);
-	}
-
+function drudesk_fields_form($form, &$form_state) {
+  if (isset($form_state['rebuild'])) {
+    $form_state['input'] = array();
+  }
 }
+*/
 
+function drudesk_fields_form_validate($form, &$form_state) {
+  $step = isset($form_state['step']) ? $form_state['step'] : 1 ;
 
-function drudesk_fields_step1_form($form, &$form_state) {
-	$form['name'] = array(
-		'#type' =>  'textfield',
-		'#title'  =>  t('Name'),
-		'#description'  =>  'Enter your name',
-		'#size' =>  20,
-		'#maxlength'  =>  32
-	);
-
-	$form['age'] = array(
-		'#type' =>  'textfield',
-		'#title'  =>  t('Age'),
-		'#description'  =>  'Enter your age',
-		'#states' =>  array(
-			'visible' => array(
-				':input[name="name"]' => array('empty' => FALSE),
-			),
-		)
-	);
-
-	if(isset($form_state['storage'])) {
-		$form['name']['#default_value'] = isset($form_state['storage']['name']) ? $form_state['storage']['name'] : "";
-		$form['age']['#default_value'] = isset($form_state['storage']['age']) ? $form_state['storage']['age'] : "";
-	}
-
-	$form['submit'] = array(
-		'#type' =>  'submit',
-		'#value'  =>  t('Next >>'),
-	);
-
-	return $form;
+  switch ($step) {
+    case '1' :
+      {
+        $age = $form_state['values']['age'];
+        if (!is_int(intval($age))) {
+          form_set_error('age', 'Sorry, your age is not valid. Please enter the integer value');
+        }
+      }
+      break;
+  }
 }
-
-function drudesk_fields_step2_form($form, &$form_state) {
-	$form['tag'] = array(
-		'#type' =>  'textfield',
-		'#title'  =>  t('Tag'),
-		'#default_value'  =>  !empty($form_state['values']['tag']) ? $form_state['values']['tag'] : ''
-	);
-
-	if(isset($form_state['storage'])) {
-		$form['tag']['#default_value'] = isset($form_state['storage']['tag']) ? $form_state['storage']['tag'] : "";
-	}
-
-	$form['back'] = array(
-		'#type' => 'submit',
-		'#value'  =>  t('<< Back'),
-		'#submit' =>  array('drudesk_fields_form_submit')
-	);
-
-	$form['next'] = array(
-		'#type' =>  'submit',
-		'#value'  =>  t('Next >>')
-	);
-
-	return $form;
-}
-
-function drudesk_fields_step3_form($form, &$form_state) {
-	$form['history'] = array(
-		'#type' =>  'textarea',
-		'#title'  =>  t('History')
-	);
-
-	if(isset($form_state['storage'])) {
-		$form['history']['#default_value'] = isset($form_state['storage']['history']) ? $form_state['storage']['history'] : "";
-	}
-
-	$form['back'] = array(
-		'#type' => 'submit',
-		'#value'  =>  t('<< Back'),
-		'#submit' =>  array('drudesk_fields_form_submit')
-	);
-
-	$form['next'] = array(
-		'#type' =>  'submit',
-		'#value'  =>  t('Next >>')
-	);
-
-	return $form;
-}
-
-function drudesk_fields_last_form($form, &$form_state) {
-	$form['name'] = array(
-		'#type' =>  'fieldset',
-		'#title'  =>  t('Name'),
-		'#value'  =>  $form_state['storage']['name']
-	);
-
-	$form['age'] = array(
-		'#type' =>  'fieldset',
-		'#title'  =>  t('Age'),
-		'#value'  =>  $form_state['storage']['age']
-	);
-
-	$form['tag'] = array(
-		'#type' =>  'fieldset',
-		'#title'  =>  t('Tag'),
-		'#value'  =>  $form_state['storage']['tag']
-	);
-
-	$form['history'] = array(
-		'#type' =>  'fieldset',
-		'#title'  =>  t('History'),
-		'#value'  =>  $form_state['storage']['history']
-	);
-
-	$form['back'] = array(
-		'#type' => 'submit',
-		'#value'  =>  t('<< Back'),
-		'#submit' =>  array('drudesk_fields_form_submit')
-	);
-
-	$form['finish'] = array(
-		'#type' =>  'submit',
-		'#value'  =>  t('Save all')
-	);
-
-	return $form;
-}
-
 
 function drudesk_fields_form_submit($form, &$form_state) {
-	$currStep = $form_state['storage']['step'];
+  $step = isset($form_state['step']) ? $form_state['step'] : 1;
 
-	if($currStep == 1) {
-		drudesk_fields_step1_submit_handler($form, $form_state);
-	} elseif ($currStep == 2) {
-		drudesk_fields_step2_submit_handler($form, $form_state);
-	} elseif ($currStep == 3) {
-		drudesk_fields_step3_submit_handler($form, $form_state);
-	} else {
-		drudesk_fields_last_submit_handler($form, $form_state);
-	}
+  switch ($step) {
+    case '1' :
+      {
+        $form_state['storage']['name'] = isset($form_state['input']['name']) ? $form_state['input']['name'] : "";
+        $form_state['storage']['age'] = isset($form_state['input']['age']) ? $form_state['input']['age'] : "";
+
+        $form_state['step'] = 2;
+        $form_state['rebuild'] = TRUE;
+
+        return;
+      }
+      break;
+    case '2':
+      {
+        if ($form_state['clicked_button']['#value'] == '<< Back') {
+          $form_state['storage']['tag'] = isset($form_state['input']['tag']) ? $form_state['input']['tag'] : "";
+          $form_state['step']--;
+          $form_state['rebuild'] = TRUE;
+          return;
+        } else {
+          $form_state['storage']['tag'] = isset($form_state['input']['tag']) ? $form_state['input']['tag'] : "";
+          $form_state['step']++;
+          $form_state['rebuild'] = TRUE;
+          return;
+        }
+      }
+      break;
+    case '3':
+      {
+        if ($form_state['clicked_button']['#value'] == '<< Back') {
+          $form_state['storage']['history'] = isset($form_state['input']['history']) ? $form_state['input']['history'] : "";
+          $form_state['step']--;
+          $form_state['rebuild'] = TRUE;
+          return;
+        } else {
+          $form_state['storage']['history'] = isset($form_state['input']['history']) ? $form_state['input']['history'] : "";
+          $form_state['step']++;
+          $form_state['rebuild'] = TRUE;
+          return;
+        }
+      }
+      break;
+    case '4':
+      {
+        if ($form_state['clicked_button']['#value'] == '<< Back') {
+          $form_state['step']--;
+          $form_state['rebuild'] = TRUE;
+          return;
+        }
+
+        $query = db_insert('drudesk_table')->fields(array(
+          'name' => $form_state['storage']['name'],
+          'age' => $form_state['storage']['age'],
+          'tag' => $form_state['storage']['tag'],
+          'history' => $form_state['storage']['history'],
+        ))->execute();
+
+        if ($query > 0) {
+          drupal_set_message(t("Data successfully added"));
+
+          $form_state['rebuild'] = FALSE;
+        }
+        else {
+          drupal_set_message(t("Data unfortunately not added."), 'error');
+        }
+      }
+      break;
+  }
 }
 
+/*
+function drudesk_fields_form_submit($form, &$form_state) {
+  $currStep = $form_state['storage']['step'];
 
-function drudesk_fields_step1_submit_handler($form, &$form_state) {
-	if($form_state['storage']['step']) {
-		$form_state['storage']['name'] = isset($form_state['input']['name']) ? $form_state['input']['name'] : "";
-		$form_state['storage']['age'] = isset($form_state['input']['age']) ? $form_state['input']['age'] : "";
-
-		$form_state['storage']['step']++;
-		$form_state['rebuild'] = TRUE;
-		return;
-	}
+  if ($currStep == 1) {
+    drudesk_fields_step1_submit_handler($form, $form_state);
+  }
+  elseif ($currStep == 2) {
+    drudesk_fields_step2_submit_handler($form, $form_state);
+  }
+  elseif ($currStep == 3) {
+    drudesk_fields_step3_submit_handler($form, $form_state);
+  }
+  else {
+    drudesk_fields_last_submit_handler($form, $form_state);
+  }
 }
-
-function drudesk_fields_step2_submit_handler($form, &$form_state) {
-	if($form_state['clicked_button']['#value'] == '<< Back') {
-		$form_state['storage']['step']--;
-		$form_state['rebuild'] = TRUE;
-		return;
-	}
-
-	if($form_state['storage']['step']) {
-		$form_state['storage']['tag'] = isset($form_state['input']['tag']) ? $form_state['input']['tag'] : "";
-
-		$form_state['storage']['step']++;
-		$form_state['rebuild'] = TRUE;
-		return;
-	}
-}
-
-function drudesk_fields_step3_submit_handler($form, &$form_state) {
-	if($form_state['clicked_button']['#value'] == '<< Back') {
-		$form_state['storage']['step']--;
-		$form_state['rebuild'] = TRUE;
-		return;
-	}
-
-	if($form_state['storage']['step']) {
-		$form_state['storage']['history'] = isset($form_state['input']['history']) ? $form_state['input']['history'] : "";
-
-		$form_state['storage']['step']++;
-		$form_state['rebuild'] = TRUE;
-		return;
-	}
-}
-
-function drudesk_fields_last_submit_handler($form, &$form_state) {
-	if($form_state['clicked_button']['#value'] == '<< Back') {
-		$form_state['storage']['step']--;
-		$form_state['rebuild'] = TRUE;
-		return;
-	}
-
-	$query = db_insert('drudesk_table')
-		->fields(array(
-			'name'  =>  $form_state['storage']['name'],
-			'age' =>  $form_state['storage']['age'],
-			'tag' =>  $form_state['storage']['tag'],
-			'history' =>  $form_state['storage']['history']
-		))
-		->execute();
-
-	if($query > 0) {
-		drupal_set_message(t("Data successfully added"));
-
-		$form_state['rebuild'] = FALSE;
-	} else {
-		drupal_set_message(t("Data unfortunately not added."), 'error');
-	}
-}
+*/
