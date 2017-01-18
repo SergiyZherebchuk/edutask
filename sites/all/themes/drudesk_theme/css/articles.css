@@ -9,9 +9,6 @@
 
 .blog-block .block-image {
   float: left;
-  @media screen and (max-width: 560px) {
-    ;
-  }
 }
 
 .blog-block .block-image img {
@@ -41,7 +38,4 @@
 
 .my-node {
   display: inline-block;
-  @media screen and (max-width: 560px) {
-    clear: both;
-  }
 }
