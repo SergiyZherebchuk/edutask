@@ -5,8 +5,3 @@ description = Install custom module
 package = Drudesk Custom
 core = 7.x
 version = 7.x-dev
-
-; Contributed modules
-
-
-; Views Handler

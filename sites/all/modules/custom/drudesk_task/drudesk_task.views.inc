@@ -3,7 +3,6 @@
 /**
  * Implements hook_views_data()
  */
-
 function drudesk_task_views_data() {
   $data = array();
 

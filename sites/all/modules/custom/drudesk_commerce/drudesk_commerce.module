@@ -1,19 +1,18 @@
 <?php
 
-/*
+/**
  * Implements hook_currence_info();
  */
-
 function drudesk_commerce_currency_info() {
-	return array(
-		'CZK' =>  array(
-			'code'  =>  'CZK',
-			'numeric_code'  =>  '203',
-			'symbol'  =>  'kor.',
-			'name'  =>  t('Czech Koruna'),
-			'symbol_placement'  =>  'before',
-			'minor_unit'  =>  t('Cent'),
-			'major_unit'  =>  t('Koruna')
-		)
-	);
+  return array(
+    'CZK' => array(
+      'code' => 'CZK',
+      'numeric_code' => '203',
+      'symbol' => 'kor.',
+      'name' => t('Czech Koruna'),
+      'symbol_placement' => 'before',
+      'minor_unit' => t('Cent'),
+      'major_unit' => t('Koruna'),
+    ),
+  );
 }

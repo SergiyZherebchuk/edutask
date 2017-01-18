@@ -4,9 +4,9 @@
  * Implements hook_ctools_plugin_directory()
  */
 function drudesk_panels_ctools_plugin_directory($owner, $plugin_type) {
-	if($owner == 'ctools' && $plugin_type == 'content_types') {
-		return 'plugins/' . $plugin_type;
-	}
+  if ($owner == 'ctools' && $plugin_type == 'content_types') {
+    return 'plugins/' . $plugin_type;
+  }
 }
 
 /**
@@ -17,24 +17,28 @@ function drudesk_panels_cronapi($op, $job = NULL) {
 
   $items['drudesk_crons'] = array(
     'description' => 'Custom drudesk cron',
-    'callback' => 'drudesk_cron_select_content'
+    'callback' => 'drudesk_cron_select_content',
   );
 
   return $items;
 }
 
+/**
+ * Implements drudesk_cron callback
+ */
 function drudesk_cron_select_content() {
   $items = db_select('node', 'n')
     ->fields('n')
-    ->range(0,10)
+    ->range(0, 10)
     ->execute()
     ->fetchAll();
 
-  if(count($items)) {
+  if (count($items)) {
     $queue = DrupalQueue::get('drudesk_main_queue');
     $queue->createQueue();
     $queue->createItem($items);
-  } else {
+  }
+  else {
     return;
   }
 }
@@ -55,15 +59,16 @@ function drudesk_panels_cron_queue_info() {
  * Queue function
  */
 function drudesk_function($data) {
-  if(!empty($data)) {
-    foreach($data as $value) {
+  if (!empty($data)) {
+    foreach ($data as $value) {
       $hour = (REQUEST_TIME - $value->changed) / 3600;
       if ($hour > 2 && $hour < 4) {
         db_update('node')
           ->fields(array('status' => 0))
           ->condition('nid', $value->nid)
           ->execute();
-      } elseif ($hour > 4 && $hour < 6) {
+      }
+      elseif ($hour > 4 && $hour < 6) {
         db_update('node')
           ->fields(array('status' => 1))
           ->condition('nid', $value->nid)
