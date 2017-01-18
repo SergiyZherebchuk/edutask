@@ -3,7 +3,6 @@
  * @file
  * Default theme implementation to display the basic html structure of a single
  * Drupal page.
- *
  * Variables:
  * - $css: An array of CSS files for the current page.
  * - $language: (object) The language the site is being displayed in.
@@ -45,18 +44,16 @@
  *   content.
  * - $classes String of classes that can be used to style contextually through
  *   CSS.
- *
  * @see bootstrap_preprocess_html()
  * @see template_preprocess()
  * @see template_preprocess_html()
  * @see template_process()
- *
  * @ingroup templates
  */
 ?><!DOCTYPE html>
-<html<?php print $html_attributes;?><?php print $rdf_namespaces;?>>
+<html<?php print $html_attributes; ?><?php print $rdf_namespaces; ?>>
 <head>
-  <link rel="profile" href="<?php print $grddl_profile; ?>" />
+  <link rel="profile" href="<?php print $grddl_profile; ?>"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php print $head; ?>
@@ -64,16 +61,18 @@
   <?php print $styles; ?>
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
-    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
 </head>
 <body<?php print $body_attributes; ?>>
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  </div>
-  <?php print $page_top; ?>
-  <?php print $page; ?>
-  <?php print $page_bottom; ?>
+<div id="skip-link">
+  <a href="#main-content"
+     class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
+</div>
+<?php print $page_top; ?>
+<?php print $page; ?>
+<?php print $page_bottom; ?>
 </body>
 </html>

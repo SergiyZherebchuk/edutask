@@ -11,27 +11,25 @@ var Markdown = require('markdown-it');
 
 function markdown2html(markdownString) {
   var md = new Markdown();
-
+  
   // the slice removes the <p>...</p> wrapper output by Markdown processor
   return md.render(markdownString.trim()).slice(3, -5);
 }
 
-
 /*
-Mini-language:
-  //== This is a normal heading, which starts a section. Sections group variables together.
-  //## Optional description for the heading
-
-  //=== This is a subheading.
-
-  //** Optional description for the following variable. You **can** use Markdown in descriptions to discuss `<html>` stuff.
-  @foo: #fff;
-
-  //-- This is a heading for a section whose variables shouldn't be customizable
-
-  All other lines are ignored completely.
-*/
-
+ Mini-language:
+ //== This is a normal heading, which starts a section. Sections group variables together.
+ //## Optional description for the heading
+ 
+ //=== This is a subheading.
+ 
+ //** Optional description for the following variable. You **can** use Markdown in descriptions to discuss `<html>` stuff.
+ @foo: #fff;
+ 
+ //-- This is a heading for a section whose variables shouldn't be customizable
+ 
+ All other lines are ignored completely.
+ */
 
 var CUSTOMIZABLE_HEADING = /^[/]{2}={2}(.*)$/;
 var UNCUSTOMIZABLE_HEADING = /^[/]{2}-{2}(.*)$/;
@@ -173,7 +171,7 @@ Parser.prototype.parseSection = function () {
     this._tokenizer.unshift(docstring);
   }
   this.parseSubSections(section);
-
+  
   return section;
 };
 
@@ -191,7 +189,7 @@ Parser.prototype.parseSubSections = function (section) {
     }
     section.addSubSection(subsection);
   }
-
+  
   if (section.subsections.length === 1 && !section.subsections[0].heading && section.subsections[0].variables.length === 0) {
     // Ignore lone empty implicit subsection
     section.subsections = [];
@@ -232,6 +230,5 @@ Parser.prototype.parseVar = function () {
   this._tokenizer.unshift(variable);
   return null;
 };
-
 
 module.exports = Parser;

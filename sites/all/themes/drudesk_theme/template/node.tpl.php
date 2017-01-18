@@ -3,7 +3,6 @@
 /**
  * @file
  * Default theme implementation to display a node.
- *
  * Available variables:
  * - $title: the (sanitized) title of the node.
  * - $content: An array of node items. Use render($content) to print them all,
@@ -39,7 +38,6 @@
  * - $title_suffix (array): An array containing additional output populated by
  *   modules, intended to be displayed after the main title tag that appears in
  *   the template.
- *
  * Other variables:
  * - $node: Full node object. Contains data that may not be safe.
  * - $type: Node type; for example, story, page, blog, etc.
@@ -51,7 +49,6 @@
  * - $zebra: Outputs either "even" or "odd". Useful for zebra striping in
  *   teaser listings.
  * - $id: Position of the node. Increments each time it's output.
- *
  * Node status variables:
  * - $view_mode: View mode; for example, "full", "teaser".
  * - $teaser: Flag for the teaser state (shortcut for $view_mode == 'teaser').
@@ -65,40 +62,31 @@
  * - $is_front: Flags true when presented in the front page.
  * - $logged_in: Flags true when the current user is a logged-in member.
  * - $is_admin: Flags true when the current user is an administrator.
- *
  * Field variables: for each field instance attached to the node a corresponding
  * variable is defined; for example, $node->body becomes $body. When needing to
  * access a field's raw values, developers/themers are strongly encouraged to
  * use these variables. Otherwise they will have to explicitly specify the
  * desired field language; for example, $node->body['en'], thus overriding any
  * language negotiation rule that was previously applied.
- *
  * @see template_preprocess()
  * @see template_preprocess_node()
  * @see template_process()
- *
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="blog-block" <?php print $attributes; ?>>
-
+<div id="node-<?php print $node->nid; ?>"
+     class="blog-block" <?php print $attributes; ?>>
   <?php print $user_picture; ?>
-
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
-    <h2 <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+    <h2 <?php print $title_attributes; ?>><a
+        href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
-
   <?php print render($content['body']); ?>
-
   <?php if ($display_submitted): ?>
     <?php print render($content['links']); ?>
-
-    <!--div class="submitted"-->
     <?php print $submitted; ?>
-    <!--/div-->
   <?php endif; ?>
 </div>
-
 <br/>

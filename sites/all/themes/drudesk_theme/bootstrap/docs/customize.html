@@ -10,24 +10,29 @@ lead: Customize Bootstrap's components, Less variables, and jQuery plugins to ge
   So we use a conditional comment instead to inform folks about the lack of IE8 support.
 -->
 <!--[if lt IE 9]>
-  <style>
-    .bs-customizer,
-    .bs-customizer-import,
-    .bs-docs-sidebar {
-      display: none;
-    }
-  </style>
-  <div class="alert alert-danger">
-    <strong>The Bootstrap Customizer does not support IE9 and below.</strong><br>
-    Please take a second to <a href="http://browsehappy.com/">upgrade to a more modern browser</a>.
-  </div>
+<style>
+  .bs-customizer,
+  .bs-customizer-import,
+  .bs-docs-sidebar {
+    display: none;
+  }
+</style>
+<div class="alert alert-danger">
+  <strong>The Bootstrap Customizer does not support IE9 and below.</strong><br>
+  Please take a second to <a href="http://browsehappy.com/">upgrade to a more
+  modern browser</a>.
+</div>
 <![endif]-->
 
 <!-- Customizer form -->
 
-<div id="defaults-change-alert" class="alert alert-warning alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Heads up!</strong> The default value for <code>@brand-primary</code> has changed in the latest release to improve contrast and accessibility. Please double check your compiled CSS when upgrading.
+<div id="defaults-change-alert" class="alert alert-warning alert-dismissible"
+     role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span></button>
+  <strong>Heads up!</strong> The default value for <code>@brand-primary</code>
+  has changed in the latest release to improve contrast and accessibility.
+  Please double check your compiled CSS when upgrading.
 </div>
 
 <div class="bs-docs-section bs-customizer-import">
@@ -35,10 +40,14 @@ lead: Customize Bootstrap's components, Less variables, and jQuery plugins to ge
     <div class="import-header">
       <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
     </div>
-    <p class="lead">Have an existing configuration? Upload your <code>config.json</code> to import it.</p>
-    <p>Drag and drop here, or <label id="import-manual-trigger" class="btn-link">manually upload<input type="file" id="import-file-select" class="hidden"></label>.</p>
+    <p class="lead">Have an existing configuration? Upload your <code>config.json</code>
+      to import it.</p>
+    <p>Drag and drop here, or <label id="import-manual-trigger"
+                                     class="btn-link">manually upload<input
+      type="file" id="import-file-select" class="hidden"></label>.</p>
     <hr>
-    <p><strong>Don't have one?</strong> That's okay—just start customizing the fields below.</p>
+    <p><strong>Don't have one?</strong> That's okay—just start customizing the
+      fields below.</p>
   </div>
 </div>
 
@@ -47,7 +56,10 @@ lead: Customize Bootstrap's components, Less variables, and jQuery plugins to ge
     <button class="btn btn-default toggle" type="button">Toggle all</button>
     <h1 id="less" class="page-header">Less files</h1>
 
-    <p class="lead">Choose which Less files to compile into your custom build of Bootstrap. Not sure which files to use? Read through the <a href="../css/">CSS</a> and <a href="../components/">Components</a> pages in the docs.</p>
+    <p class="lead">Choose which Less files to compile into your custom build of
+      Bootstrap. Not sure which files to use? Read through the <a
+        href="../css/">CSS</a> and <a href="../components/">Components</a> pages
+      in the docs.</p>
 
     <div class="row">
       <div class="col-xs-6 col-sm-4">
@@ -84,13 +96,15 @@ lead: Customize Bootstrap's components, Less variables, and jQuery plugins to ge
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" checked value="forms.less" data-dependents="navbar.less,input-groups.less">
+            <input type="checkbox" checked value="forms.less"
+                   data-dependents="navbar.less,input-groups.less">
             Forms
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" checked value="buttons.less" data-dependents="button-groups.less">
+            <input type="checkbox" checked value="buttons.less"
+                   data-dependents="button-groups.less">
             Buttons
           </label>
         </div>
@@ -112,25 +126,29 @@ lead: Customize Bootstrap's components, Less variables, and jQuery plugins to ge
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" checked value="button-groups.less" data-dependencies="buttons.less">
+            <input type="checkbox" checked value="button-groups.less"
+                   data-dependencies="buttons.less">
             Button groups
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" checked value="input-groups.less" data-dependencies="forms.less">
+            <input type="checkbox" checked value="input-groups.less"
+                   data-dependencies="forms.less">
             Input groups
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" checked value="navs.less" data-dependents="navbar.less">
+            <input type="checkbox" checked value="navs.less"
+                   data-dependents="navbar.less">
             Navs
           </label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" checked value="navbar.less" data-dependencies="forms.less,navs.less">
+            <input type="checkbox" checked value="navbar.less"
+                   data-dependencies="forms.less,navs.less">
             Navbar
           </label>
         </div>
@@ -273,7 +291,9 @@ lead: Customize Bootstrap's components, Less variables, and jQuery plugins to ge
     <button class="btn btn-default toggle" type="button">Toggle all</button>
     <h1 id="plugins" class="page-header">jQuery plugins</h1>
 
-    <p class="lead">Choose which jQuery plugins should be included in your custom JavaScript files. Unsure what to include? Read the <a href="../javascript/">JavaScript</a> page in the docs.</p>
+    <p class="lead">Choose which jQuery plugins should be included in your
+      custom JavaScript files. Unsure what to include? Read the <a
+        href="../javascript/">JavaScript</a> page in the docs.</p>
     <div class="row">
       <div class="col-lg-6">
         <h4>Linked to components</h4>
@@ -315,8 +335,10 @@ lead: Customize Bootstrap's components, Less variables, and jQuery plugins to ge
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" checked value="popover.js" data-dependencies="tooltip.js">
-            Popovers <small>(requires Tooltips)</small>
+            <input type="checkbox" checked value="popover.js"
+                   data-dependencies="tooltip.js">
+            Popovers
+            <small>(requires Tooltips)</small>
           </label>
         </div>
         <div class="checkbox">
@@ -349,7 +371,8 @@ lead: Customize Bootstrap's components, Less variables, and jQuery plugins to ge
         <div class="checkbox">
           <label>
             <input type="checkbox" checked value="transition.js">
-            Transitions <small>(required for any kind of animation)</small>
+            Transitions
+            <small>(required for any kind of animation)</small>
           </label>
         </div>
       </div>
@@ -357,29 +380,40 @@ lead: Customize Bootstrap's components, Less variables, and jQuery plugins to ge
 
     <div class="bs-callout bs-callout-info">
       <h4>Produces two files</h4>
-      <p>All checked plugins will be compiled into a readable <code>bootstrap.js</code> and a minified <code>bootstrap.min.js</code>. We recommend you use the minified version in production.</p>
+      <p>All checked plugins will be compiled into a readable
+        <code>bootstrap.js</code> and a minified <code>bootstrap.min.js</code>.
+        We recommend you use the minified version in production.</p>
     </div>
 
     <div class="bs-callout bs-callout-danger">
       <h4>jQuery required</h4>
-      <p>All plugins require the latest version of <a href="http://jquery.com/" target="_blank">jQuery</a> to be included.</p>
+      <p>All plugins require the latest version of <a href="http://jquery.com/"
+                                                      target="_blank">jQuery</a>
+        to be included.</p>
     </div>
   </div>
 
   <div class="bs-docs-section" id="less-variables-section">
-    <button class="btn btn-default toggle" type="button">Reset to defaults</button>
+    <button class="btn btn-default toggle" type="button">Reset to defaults
+    </button>
     <h1 id="less-variables" class="page-header">Less variables</h1>
 
-    <p class="lead">Customize Less variables to define colors, sizes and more inside your custom CSS stylesheets.</p>
+    <p class="lead">Customize Less variables to define colors, sizes and more
+      inside your custom CSS stylesheets.</p>
     {% include customizer-variables.html %}
   </div>
 
   <div class="bs-docs-section">
     <h1 id="download" class="page-header">Download</h1>
 
-    <p class="lead">Hooray! Your custom version of Bootstrap is now ready to be compiled. Just click the button below to finish the process.</p>
+    <p class="lead">Hooray! Your custom version of Bootstrap is now ready to be
+      compiled. Just click the button below to finish the process.</p>
     <div class="bs-customize-download">
-      <button type="submit" id="btn-compile" disabled class="btn btn-block btn-lg btn-outline" onclick="ga('send', 'event', 'Customize', 'Download', 'Customize and Download');">Compile and Download</button>
+      <button type="submit" id="btn-compile" disabled
+              class="btn btn-block btn-lg btn-outline"
+              onclick="ga('send', 'event', 'Customize', 'Download', 'Customize and Download');">
+        Compile and Download
+      </button>
     </div>
   </div><!-- /download -->
 </form>

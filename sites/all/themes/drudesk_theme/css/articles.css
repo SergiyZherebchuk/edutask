@@ -3,12 +3,15 @@
   min-height: 300px;
   margin-bottom: 50px;
   background-color: white;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
 .blog-block .block-image {
   float: left;
+  @media screen and (max-width: 560px) {
+    ;
+  }
 }
 
 .blog-block .block-image img {
@@ -32,4 +35,13 @@
   font-size: 18px;
   color: #868686;
   overflow: hidden;
+  width: auto;
+  display: inline-block;
+}
+
+.my-node {
+  display: inline-block;
+  @media screen and (max-width: 560px) {
+    clear: both;
+  }
 }
