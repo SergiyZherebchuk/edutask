@@ -93,9 +93,12 @@
       </div>
       <br/>
       <?php if ($display_submitted): ?>
-        <?php print render($content['links']); ?>
-        <?php print render($content['comments']); ?>
-        <?php print $submitted; ?>
+        <br/>
+        <div class="node-link-block">
+          <?php print render($content['links']); ?>
+          <br/>
+          <?php print render($content['comments']); ?>
+        </div>
       <?php endif; ?>
     </div>
   </div>

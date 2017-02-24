@@ -79,14 +79,21 @@
   <?php print $user_picture; ?>
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
-    <h2 <?php print $title_attributes; ?>><a
-        href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+    <h2 class="node-title" <?php print $title_attributes; ?>>
+      <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
+    </h2>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
-  <?php print render($content['body']); ?>
-  <?php if ($display_submitted): ?>
-    <?php print render($content['links']); ?>
-    <?php print $submitted; ?>
-  <?php endif; ?>
+  <div class="node-block">
+    <div class="block-post">
+      <?php print render($content['body']); ?>
+    </div>
+    <?php if ($display_submitted): ?>
+      <div class="node-link-block">
+        <?php print render($content['links']['node']); ?>
+        <br/>
+      </div>
+    <?php endif; ?>
+  </div>
 </div>
 <br/>
